@@ -1,0 +1,27 @@
+.locatpage
+{
+    outline-style:auto;
+    margin-top:10%;
+}
+.locathead
+{
+    
+}
+.addresstype
+{
+    outline-style:auto;
+    outline-color:red;
+}
+.textaddress
+{
+    outline-style:auto;
+    outline-color:blue;
+}
+.map
+{
+    margin-top:10px;
+    outline-style:auto;
+    outline-color:darkgreen;
+
+}
+

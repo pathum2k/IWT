@@ -1,0 +1,145 @@
+.main
+{
+    border:none;
+    width: 100%;
+    background-color: rgb(0,77,0);
+
+}.headbox
+{
+    
+    width:100%;
+    align-items:center;
+    text-align:center;
+    background-color: rgb(0, 0, 0);
+
+}
+.headtext
+{
+
+    font-size:30px;
+    color:white;
+
+}
+
+.headbase
+{
+    border:1px solid yellow;
+    width:100%;
+    min-height:50px;
+    max-height:100px;
+    background-color: rgb(0, 77, 0);
+    display: flex;
+
+}
+.logodiv
+{
+    
+    width:25%;
+    border:none;
+    min-height:50px;
+    max-height:100px;
+    border:2px solid blue;
+}
+.logo
+{
+    padding-left: 10px;;
+    max-height:50%;
+    min-height:90%;
+    min-width:25%;
+    max-width:50%;
+}
+.shopname
+{
+
+    border:1px solid rgb(208, 255, 0);
+    color:white;
+    width:75%;
+    align-items:center;
+    font-size:40px;
+    display:flex;
+    justify-content:space-around;
+ 
+
+}
+
+.menu
+{
+    outline-style:auto;
+    outline-color:black;
+    margin-top: 20px;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(0, 77, 0);
+    
+
+}
+.button
+{
+    color:white;
+    border:none;
+    text-decoration:none;
+    font-size:30px;
+    margin:10px;
+    
+}
+.catbox:hover
+{
+    background-color: black;
+
+}
+
+/* on mouse button colour change */
+.button:hover
+{
+    background-color:#3e8e41;
+    color:black;
+
+}
+.catdiv
+{
+    margin-top: 20px;
+    width:100%;
+    height:auto;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    
+}
+
+.catbox
+{
+
+    height: 300px;
+    width: 350px;
+    min-width:350px;
+    text-align:center;
+    outline-color: rgb(255, 0, 0);
+    outline-style:auto;
+    float:left;/* item one line set*/
+    margin:20px;/* item space*/
+    background-color: rgb(224, 14, 14);
+}
+
+.imgdiv
+{
+    height: 250px;
+    width: 100%;
+
+}
+
+.catimg
+{
+    height: 250px;
+    width: 100%;
+}
+
+.catname
+{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+    font-size: 22px;
+}

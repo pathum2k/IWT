@@ -1,0 +1,16 @@
+.paydiv
+{
+    margin-top:20px;
+    outline-style: auto;
+    outline-color:orange;
+    background-color:red;
+
+
+
+}
+.paytext
+{
+    font-size: 22px;
+    color:white;
+    
+}
