@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    font-family:system-ui;
+}
+
+.parallax{
+    background-image:url('images/photo.jpg');
+    height:max-content;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.page-title{
+    background:rgba(0,0,0,0.5);
+    text-align:center;
+	logo-align:left-side;
+    color:white;
+    padding:50px;
+    font-variant:small-caps;
+    font-size: 80px;
+    font-family:fantasy;
+    letter-spacing:10px;
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.menu{
+    background:#4edb41;
+    text-align:center;
+}
+
+.menu-ul{
+    margin:0;
+    padding:0;
+    display:inline;
+}
+
+.menu-ul li{
+    font-size:17px;
+    list-style:none;
+    display:inline-block;
+    padding: 25px 25px 26px 25px;
+}
+
+.a-menu{
+    text-decoration:none;
+    color:white;
+}
+
+.menu-ui li:hover{
+	background:#afe4ae;
+	transform:scale(1.1);
+}
+
+.contact-number li:hover{
+	background:#f5f7f5;
+	transform:scale(1.1);

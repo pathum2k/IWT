@@ -1,0 +1,116 @@
+/* h1{text-align: center;}
+p{text-align: center;}
+div{text-align: center;}
+
+body{margin:0;} */
+
+.icon-bar 
+	{
+	width: 100%;
+	background- color: #000;
+	overflow: auto;
+	}
+
+.icon-bar a:hover
+	{
+	background-color: #000;
+	}
+
+.active
+	{
+	background-color: none;
+	}
+
+div{
+	background-color: none ;
+	width: 800px;
+	border: 4px  solid green;
+	padding: 80px;
+	margine: 100px;
+}
+.block
+	{
+	display: block;
+	width: 80%
+	boder: none;
+	background-color: pink;
+	colore: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	text-align:center;
+	}
+.block:hover
+	{
+	background-color: pink;
+	color: white;
+	}
+ul
+	{
+	list-style-type: none;
+	margine: 0;
+	padding: 0;
+	}
+
+.navbar 
+	{
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+.logo
+{
+	display:block;
+	margine-left:auto;
+	margine-right:auto;
+
+div
+	{
+	background-color: lightgray;
+	width: 300px;
+	border: 15px  green;
+	padding: 50px;
+	margin: 20px;
+	}
+<meta name="viewport"
+content="width=device-width, initial-scale=1">	
+<style>
+<body> {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+.topnav{
+	overflow: hidden;
+	background-color: #333;
+	}
+.topnav a{
+	float: left;
+	color:	#f2f2f2;
+	text-align: center;
+	padding: 6px 8px;
+	text-decoration: none;
+	font-size: 40px;
+	}
+.topnav a:hover{
+	background-color: #ddd;
+	color: black;
+	}
+.topnav a.active{
+	background-coior: #04AA6D;
+	color:white;	
+	
+<div class="topnav">
+<a class="active" href="#home">home</a>
+<a href="#news">news</a>
+<a href="#contact">contact</a>
+<a href="#about">about</a>
+</div>
+
+<div style="padding-left:16px">
+	<h2>Top Navigation Example</h2>
+	<p>some content..</p>
+</div>
+</style>
+</body>
