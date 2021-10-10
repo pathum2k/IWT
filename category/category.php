@@ -134,14 +134,35 @@ if(isset($_COOKIE['id'])){
     </div>
     <br>
             <div class="conandmail">
-                <div class="contact">
-                    <a href="" class="textcontact">contact numbers</a>
+                <div class="contact" >
+                    <button  class="textcontact cbtn">contact numbers</button>
 
                 </div>
                 <div class="mail">
-                    <a href="../cart/cart.html" class="textmail"> emails</a>
+                    <button  class="textmail btn" > emails</button>
 
                 </div>
-            <div>   
+            <div> 
+                
+            
+            <script>
+                document.addEventListener('DOMContentLoaded',()=>{
+                    emailbtn=document.querySelector('.btn')
+                    emailbtn.addEventListener('click',()=>{
+                        let dis='pathumaweerasooriya@gmail.com\n'
+
+                        alert(dis)
+                    })
+
+                    contactbtn=document.querySelector('.cbtn')
+                    contactbtn.addEventListener('click',()=>{
+                        let dis='0712720033\n'
+
+                        alert(dis)
+                    })
+
+
+                })
+            </script>
 </body>
 </html>
