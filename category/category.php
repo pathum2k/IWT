@@ -1,7 +1,14 @@
 <?php
 
+if(isset($_COOKIE['id'])){
+	$login=true;
+}else{
+	$login=false;
+}
+
 
 ?>
+
 
 <!DOCKTYPE html>
 <html>
@@ -9,6 +16,39 @@
 
     <title>Online Grocery</title>
     <link rel="stylesheet" href="../css/category.css">
+
+    <style>
+        .logoutbtn{
+            background-color: transparent;
+            color: white;
+            font-size:30px ;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 10px;
+        }
+        .logoutbtn:hover{
+            background-color:#3f8b49;
+    
+            color:black;
+            cursor: pointer;
+        }
+        .loginbtn{
+            background-color: transparent;
+            color: white;
+            font-size:30px ;
+            border: none;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+        .loginbtn:hover{
+            background-color:#3f8b49;
+    
+            color:black;
+            cursor: pointer;
+        }
+        
+    </style>
 
 </head>
 <body>
@@ -28,11 +68,24 @@
                             </div>                
                 </div>
 
-                <div class="menu">                    
+                <div class="menu"> 
+                    <form action="../php/logout.php" method="POST">                   
                             <a href="../index.php" class="button"> Home     </a>
                             <a href="" class="button"> Category </a>
                             <a href="../aboutus/aboutus.html" class="button"> About us </a>
-                            <a href="../login/login.php" class="button"> Login    </a>
+                            <!-- show login btn if not log in -->
+                            <?php
+                            if($login){
+                                echo '
+                                
+                                <button type="submit" class="logoutbtn" name="logout">Logout</button>';
+                                
+                            }else{
+                                echo '<a href="../login/login.php" class="loginbtn" >Login</a>';
+                            }
+                        ?>
+                    </form>
+                            
                 </div>
         </div>
     
