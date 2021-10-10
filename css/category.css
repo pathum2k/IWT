@@ -2,32 +2,30 @@
 {
     border:none;
     width: 100%;
-    background-color: rgb(0,77,0);
+    background-color: rgb(0, 0, 0);
 
-}.headbox
+}
+.headbox
 {
     
     width:100%;
     align-items:center;
     text-align:center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 
 }
 .headtext
 {
-
     font-size:30px;
-    color:white;
+    color:rgb(0, 0, 0);
 
 }
 
 .headbase
 {
-    border:1px solid yellow;
     width:100%;
     min-height:50px;
     max-height:100px;
-    background-color: rgb(0, 77, 0);
     display: flex;
 
 }
@@ -38,7 +36,6 @@
     border:none;
     min-height:50px;
     max-height:100px;
-    border:2px solid blue;
 }
 .logo
 {
@@ -51,15 +48,10 @@
 .shopname
 {
 
-    border:1px solid rgb(208, 255, 0);
-    color:white;
+    color:rgb(255, 255, 255);
     width:75%;
-    align-items:center;
     font-size:40px;
-    display:flex;
-    justify-content:space-around;
- 
-
+    padding-left: 27%;
 }
 
 .menu
@@ -71,7 +63,6 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    background-color:rgb(0, 77, 0);
     
 
 }
@@ -93,7 +84,7 @@
 /* on mouse button colour change */
 .button:hover
 {
-    background-color:#3e8e41;
+    background-color:#3f8b49;
     color:black;
 
 }
@@ -116,11 +107,10 @@
     width: 350px;
     min-width:350px;
     text-align:center;
-    outline-color: rgb(255, 0, 0);
     outline-style:auto;
     float:left;/* item one line set*/
     margin:20px;/* item space*/
-    background-color: rgb(224, 14, 14);
+    background-color: rgb(200, 27, 21);
 }
 
 .imgdiv
@@ -142,4 +132,44 @@
     color:rgb(255, 255, 255);
     font-weight:bold;
     font-size: 22px;
+}
+.conandmail
+{
+    width:100%;
+    background-color:black;
+}
+.contact
+{
+    width:50%;
+    align-items:center;
+}
+.mail
+{
+    width:50%;
+    align-items:center;
+}
+.textcontact
+{   
+    color:white;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+.textmail
+{
+    color:white;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+
+}
+.textcontact:hover
+{
+    background-color:#3f8b49;
+    color:black;
+}
+.textmail:hover
+{
+    background-color:#3f8b49;
+    color:black;
 }

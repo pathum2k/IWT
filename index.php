@@ -1,101 +1,71 @@
 <?php
 
+if(isset($_COOKIE['id'])){
+	$login=true;
+}else{
+	$login=false;
+}
+
 
 ?>
 
-<!DOCKTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en"> 
 <head>
+    <meta charset="UTF-8">
+	<meta name="Author" content="">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<border="1" cellpadding="0">
+    <link rel="stylesheet" href="css/homepage.css"/>
+	<title>Home Page</title>
+<script>
+function stickyMenu(){
+     var sticky=document.getElementById('sticky');
+	 if(widow.pageYOffset > 220){
+	     sticky.classList.add('sticky');
+		 }
+		 else{
+		     sticky.classList.remove('sticky');
+		 }	 
+}
 
-    <title>Online Grocery</title>
-    <link rel="stylesheet" href="./css/index.css">
-
+window.onscroll = function()
+{
+     stickyMenu();
+}
+</script>	 
 </head>
 <body>
-    <div class="main">
-
-                <div class="headbox">
-                    <p class="headtext">easy shopping quality products</p>
-                </div>
-
-        <div class="headbase">
-
-                <div class="logodiv">
-                        <img class="logo" src="images/logoo.jpg" alt="logo"/>
-                </div> 
-
-                <div class="shopname" >
-                        <lable>Groserie</lable>
-                </div>
-
-        
-        </div>
-            <div class="menu">
+<center>
+     <div class="parallax">
+	     <div class="page-title">Online Grocery Delivery</div>
+	 </div>
+</center>	 
+ <img class="logo" src="images/photo.jpg" height="100" width="100"> 
+     <div class="menu" id="sticky">
+         <ul class="menu-ul">
+            <a href="" class="a-menu"><li>Home</li></a>
+            <a href="./category/category.php" class="a-menu"><li>category</li></a>
+            <a href="./aboutus/aboutus.html"="a-menu"><li>About Us</li></a>
+			<?php
+				if($login){
+					echo '
+					<form action="./php/logout.php"method="post" >
+					<li><button type="submit" class="a-menu" name="logout">Logout</button></li></form>';
+					
+				}else{
+					echo '<a href="./login/login.php" class="a-menu" ><li>Login</li></a>';
+				}
+			?>
             
-                <a href="payment.php" class="button"> Home     </a>
-                <a href="buy.php" class="button"> Category </a>
-                <a href="" class="button"> About us </a>
-                <a href="" class="button"> Login    </a>
-
-            </div>
-    </div>
-    
-
-
-    <div class="catdiv">
-
-        <div class="catbox">
-
-            <div class="imgdiv">
-                <img class="catimg" src="./images/vegitables.jpg" alt="Vegitable"/>
-            </div>
-
-                <a href="" class="catname"> Vegitables </a>
-            </div>
-
-
-            <div class="catbox">
-
-                <div class="imgdiv">
-                    <img class="catimg" src="./images/fruit.jpg" alt="Fruit"/>
-                </div>
-
-                    <a href="" class="catname"> Fruits </a>
-            </div>
-
-
-            <div class="catbox">
-
-                <div class="imgdiv">
-                    <img class="catimg" src="./images/drinks.jpg" alt="Juice Item"/>
-                </div>
-
-                    <a href="" class="catname"> Juice Item </a>
-            </div>
-
-
-            <div class="catbox">
-
-                <div class="imgdiv">
-                    <img class="catimg" src="./images/snacks.jpg" alt="Snack Item"/>
-                </div>
-
-                    <a href="" class="catname"> Snacks Item </a>
-            </div>
-
-
-            <div class="catbox">
-
-                <div class="imgdiv">
-                    <img class="catimg" src="./images/grocery.jpg" alt="Grocery Item"/>
-                </div>
-
-                    <a href="" class="catname"> Grocery Item </a>
-            </div>
-
-
-
-    </div>
-<hr>    
+         </ul>
+         <div class="">
+     </div>
 </body>
-</html>
+	 
+	 <center>
+	     <p>Contact Number</p>
+		 <a href="0112345678">Contact Us</a>
+     </center>
+</html> 
