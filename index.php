@@ -20,11 +20,25 @@ if(isset($_COOKIE['id'])){
 	<border="1" cellpadding="0">
     <link rel="stylesheet" href="css/homepage.css"/>
 	<title>Home Page</title>
+	<style>
+		.back
+		{
+			width:100%;
+		}
+		.logoutbtn{
+			background-color: transparent;
+			border: none;
+			color: white;
+			font-size: 17px;
+		}
+		.logoutbtn:hover{
+			cursor: pointer;
+			
+		}
+		
+	</style>
 <script>
-.back
-{
-	width:100%;
-}
+
 function stickyMenu(){
      var sticky=document.getElementById('sticky');
 	 if(widow.pageYOffset > 220){
@@ -55,14 +69,15 @@ window.onscroll = function()
  <img class="logo" src="images/photo.jpg" height="100" width="100"> 
      <div class="menu" id="sticky">
          <ul class="menu-ul">
+		 <form action="./php/logout.php"method="post" >
             <a href="" class="a-menu" ><li>Home</li></a>
             <a href="./category/category.php" class="a-menu"><li>category</li></a>
             <a href="./aboutus/aboutus.html"="a-menu"><li>About Us</li></a>
 			<?php
 				if($login){
 					echo '
-					<form action="./php/logout.php"method="post" >
-					<li><button type="submit" class="a-menu" name="logout">Logout</button></li></form>';
+					
+					<li><button type="submit" class="logoutbtn" name="logout">Logout</button></li>';
 					
 				}else{
 					echo '<a href="./login/login.php" class="a-menu" ><li>Login</li></a>';
@@ -70,7 +85,7 @@ window.onscroll = function()
 			?>
 			</br>
 			<img id="back" src="./images/homee.jpg">
-            
+            </form>
          </ul>
          <div class="">
      </div>
